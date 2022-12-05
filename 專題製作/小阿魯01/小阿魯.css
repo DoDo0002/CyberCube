@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Noto Serif TC', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+}
+
+#navbar-btn{width: 40px;
+    position: fixed;
+    top:200px;
+    right:0px;
+    cursor: pointer;
+}
+
+/* 圖片css */
+
+/* #picture1{
+width: 99vw;
+} */
+
+.main-picture{
+    height:100vh; 
+    display: none;
+}
+
+main section:nth-child(1){
+    height:100vh;
+    padding:0px;
+
+    background-image: url("https://www.suzukimotor.com.tw/images/product/gsx-r150/kv_gsx-r150.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    justify-content: flex-end;
+}
+
+.menu{
+    width:400px;
+    height:90vh;
+    top: 50px;
+    background-color: #474448;
+    border-radius: 50px;
+    transform: translate(100px);
+    display: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 999;
+}
+@keyframes move{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes move_back{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(400px);
+    }
+}
+
+.float-right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+ul{
+    position: fixed;
+    margin-top:40vh;
+    margin-left: 2vw;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+ul a li{
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 50%;
+}
+
+ul a li:hover{
+    color: #496b91;
+}
+
+ul a li:active{
+    color: #496b916c;
+}
+
+.bluebg{
+    background-color: #2686c8;
+}
+
+.bluebg  img{
+    height: 100vh;
+}
+
+.bluebg div p{
+    width:27vw;
+}
+
+div{
+    padding: 2vw;
+}
+
+div p{
+    margin-top: 5vh;
+}
+
+footer{
+    background-color: #4a4441 ;
+    color: white;
+
+    text-align: center;
+    line-height: 6vh;
+
+    height:6vh;
+}
+
+
+/* fadeIn動畫 */
+
+.fadeIn-left{
+    animation: fadeIn-left 1s ease ;
+}
+
+@keyframes fadeIn-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeIn-right{
+    animation: fadeIn-right 1.5s ease ;
+}
+
+@keyframes fadeIn-right{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

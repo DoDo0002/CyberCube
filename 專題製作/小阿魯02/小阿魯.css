@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 100vh;
+  z-index: 0;
+  display: flex;
+}
+
+.section2{
+  flex-direction: column;
+  background-image: url("../圖片庫/section2背景03.jpg");
+}
+
+.section2 div:nth-child(1),.section2 div:nth-child(2),.section2 div:nth-child(4),.section2 div:nth-child(5){
+  display: none;
+  border: 1px solid #474448;
+  box-shadow: 1px 1px 3px 3px #474448;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.sectionD1{
+width:10vw;
+margin: 10vh 0vw 5vh 15vw;
+text-align: center;
+}
+
+.sectionD2 {
+  width:15vw;
+  text-align: center;
+  position: relative;
+  left:35vw;
+}
+
+.sectionD3 div:nth-child(1){
+text-align: center;
+position: relative;
+left:10vw;
+}
+
+.sectionD3 div:nth-child(2){
+  text-align: center;
+  position: relative;
+  left:80vw;
+  }
+
+.sectionD4{
+width:15vw;
+height:15vh;
+position: relative;
+left: 65vw;
+}
+
+.sectionD5{
+width: 10vw;
+position: relative;
+left:80vw;
+}
+
+.section2 p{
+  display: inline;
+  font-size: 3rem;
+  color: black;
+}
+
+.section3{
+  padding: 1vw;
+  font-size: 1.2rem;
+}
+
+.section3L{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.section3L p{
+  padding: 0vw;
+  letter-spacing: 0.2vw;
+  margin-top: 0vh;
+  /* text-align: justify;
+  text-justify: ideographic; */
+}
+
+.section3L img{
+  width: 60%;
+}
+
+#section3L_img{
+  padding-top: 3px;
+}
+
+.section3L-2div{
+  display: flex;
+}
+
+.section3L-2div img{
+  width: 40%;
+}
+
+.section3L-2div p{
+  width: 20vw;
+  padding: 1vw;
+  letter-spacing: 0.2vw;
+}
+
+.section3L h1{
+  display: inline;
+  font-size: 13rem;
+  font-family:'Dancing Script', cursive;
+}
+
+.section3L div:nth-child(1){
+  padding:0px;
+  width: 70vw;
+  height: 70vh;
+  background-color:#c9ced2 ;
+}
+
+.section3L div:nth-child(2){
+  padding:0px;
+  width: 70vw;
+  height: 30vh;
+  background-color:#496b919a ;
+}
+
+.section3R{
+  background-color: #474448;
+}
+
+.section3R p{
+  color: white;
+  padding: 5vw;
+  letter-spacing: 0.5vw;
+}
+
+.section3R img{
+  width: 100%;
+}
+
+.section4{
+  background-color:#edeaee;
+  padding: 5vw;
+}
+
+.section4 li{
+  padding-top: 1vh;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.section4 li:hover{
+  color: rgba(0, 0, 0, 0.226);
+}
+
+.section4 div:nth-child(1){
+  width: 10vw;
+}
+
+.section4 div:nth-child(2){
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 div img {
+  width:60%;
+}
+
+.section4 div img:nth-child(2),.section4 div img:nth-child(3),.section4 div img:nth-child(4){
+display: none;
+}
+
+#navbar-btn {
+  width: 40px;
+  position: fixed;
+  top: 200px;
+  right: 0px;
+  cursor: pointer;
+}
+
+/* 圖片css */
+
+#header-shadow {
+  position: absolute;
+  width: 700px;
+  top: 100px;
+  left: 800px;
+  z-index: 5;
+  opacity: 0;
+}
+
+.move-top {
+  animation: movetop 3s ease;
+}
+@keyframes movetop {
+  from {
+    transform: translateY(400px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.breath {
+  animation: breath 3s ease-in-out infinite;
+}
+@keyframes breath {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* #picture1{
+width: 99vw;
+} */
+.header-pic {
+  position: absolute;
+  top: 100px;
+  left: 620px;
+  z-index: 10;
+}
+
+.header-pic-move {
+  animation: pic-move 1.5s ease;
+}
+@keyframes pic-move {
+  0% {
+    transform: translate(720px, -250px) scale(0.2);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.header-pic2 {
+  position: absolute;
+  width: 300px;
+  bottom: 0px;
+  border-radius: 50px;
+}
+
+.header-pic-move2 {
+  animation: pic-move2 1s ease;
+}
+@keyframes pic-move2 {
+  0% {
+    transform: translate(-500px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.main-picture {
+  height: 100vh;
+  display: none;
+}
+
+main section:nth-child(1) {
+  height: 100vh;
+  padding: 0px;
+
+  background-image: url(../圖片庫/小阿魯底圖01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  justify-content: flex-end;
+}
+
+.menu {
+  width: 400px;
+  height: 90vh;
+  top: 50px;
+  background-color: #474448;
+  border-radius: 50px;
+  transform: translate(100px);
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 999;
+}
+@keyframes move {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes move_back {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* .bg-move{
+    background-color: #474448;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    animation:  bar-move 2s ease;
+} 
+@keyframes bar-move {
+   to{
+        background-color: #474448;
+    }
+} */
+
+.anchor {
+  position: fixed;
+  margin-top: 70vh;
+  margin-left: 2vw;
+  z-index: 99;
+}
+
+.anchor a {
+  text-decoration: none;
+}
+
+.anchor a li {
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 10%;
+}
+
+.li-scale {
+  transition: 1s ease;
+  transform: scale(1.5);
+  transform-origin: left;
+}
+
+/* ul a li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #474448;
+    border-radius: 5px;
+} */
+
+ul a li:hover {
+  color: #496b91;
+}
+
+ul a li:active {
+  color: #496b916c;
+}
+
+.bluebg img {
+  height: 100vh;
+}
+
+.bluebg div p {
+  width: 27vw;
+}
+
+div {
+  padding: 1vw;
+}
+
+div p {
+  margin-top: 5vh;
+}
+
+footer {
+  background-color: #4a4441;
+  color: white;
+
+  text-align: center;
+  line-height: 6vh;
+
+  height: 6vh;
+}
+
+/* fadeIn動畫 */
+
+.fadeIn-left {
+  animation: fadeIn-left 1s ease;
+}
+
+@keyframes fadeIn-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeIn-right {
+  animation: fadeIn-right 1.5s ease;
+}
+
+@keyframes fadeIn-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeIn-bottom {
+  animation: fadeIn-bottom 1.5s ease;
+}
+
+@keyframes fadeIn-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
