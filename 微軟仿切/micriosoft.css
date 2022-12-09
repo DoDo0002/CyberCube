@@ -141,6 +141,92 @@ section:nth-child(4) .section4-oops > div {
   margin-right: 1vw;
 }
 
+#section5-bg{
+  background-image: url("./圖片庫/section5-bg.avif");
+  background-size: cover;
+  display: inline-block;
+  width: 83%;
+  height:60vh;
+  position: relative;
+  margin: 10vh 8vw;
+  /* padding: 10vh 10vw 10vh 5vw; */
+}
+
+#section5-bg div{
+  position: relative;
+  width: 22vw;
+  top: 20vh;
+  left: 5vw;
+}
+
+#section5-bg div h2{
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+#section5-bg div p{
+  margin-bottom: 5vh;
+}
+
+#section5-bg div #section5-knowmore{
+background-color: #000000;
+color: white;
+padding: 10px 15px;
+display: inline;
+font-weight: 600;
+}
+
+section:nth-child(6){
+  width: 80%;
+  position: relative;
+  margin: 0vh 8vw;
+}
+
+section:nth-child(6) div h2{
+  font-size: 2.3rem;
+  margin-bottom: 1vh;
+}
+
+section:nth-child(6) .section6-set {
+  display: flex;
+}
+
+section:nth-child(6) .section6-set div{
+  margin:0vh 0.5vw;
+}
+
+section:nth-child(6) div a h4{
+  background-color: #950c17;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin-top: 2vh;
+    width: 70px;
+}
+
+section:nth-child(6) div a h3{
+  font-size: 1.8rem;
+  margin-bottom: 2vh;
+}
+
+section:nth-child(6) div a p{
+  margin-bottom: 3vh;
+}
+
+section:nth-child(6) .section6-change-col{
+  color: #950c17;
+font-weight: 600;
+}
+
+.section6-oops-2{
+  height: 5vh;
+}
+
+section:nth-child(7) {
+margin: 3vh 0vh 8vh 8vw;
+}
+
 section:nth-child(7) button {
   padding: 10px 15px;
   font-size: 1rem;
@@ -151,6 +237,78 @@ section:nth-child(7) button {
   right: 0.8vw;
   bottom: 0.8vw;
   position: fixed;
+}
+
+section:nth-child(7) p{
+  display: inline;
+}
+
+section:nth-child(7) ul{
+  display: inline;
+}
+
+section:nth-child(7) li{
+  display: inline;
+  margin: 1vh;
+}
+
+section:nth-child(7) img{
+  width: 1.5vw;
+}
+
+section:nth-child(8){
+  background-color: #f2f2f2;
+}
+
+section:nth-child(8) .section8-footer{
+  width: 80%;
+  margin:2vh 5vw;
+  display: flex;
+}
+
+.section8-footer div{
+margin:1vh 4vw;
+color: #616161;
+}
+
+.section8-footer div ul{
+  list-style-type: none;
+  width: 120px;
+}
+
+.section8-footer div ul li{
+  font-size: 0.7rem;
+  margin-top: 1.5vh;
+}
+
+.section8-footer div ul li h4{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+section:nth-child(9){
+  background-color:#f2f2f2 ;
+  padding: 1vh 9vw;
+  display: flex;
+}
+
+section:nth-child(9) #section9-lang{
+  margin-right: 45vw;
+  font-size: 0.7rem;
+}
+
+#section9-lang a{
+  color:#616161 ;
+}
+
+#section9-lang img{
+  width: 20px;
+}
+
+#super-footer a{
+  color:#616161 ;
+  font-size: 0.5rem;
+  margin-right: 1vw;
 }
 
 /* 圖片設定 */
