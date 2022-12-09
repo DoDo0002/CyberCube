@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+/* 排版 */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+section:nth-child(1) nav {
+  display: flex;
+}
+
+section:nth-child(1) nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(1) nav ul {
+  display: flex;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+section:nth-child(1) nav #section1_ul {
+  width: 30vw;
+  margin-right: 26vw;
+}
+
+section:nth-child(1) nav ul li {
+  margin-right: 1.8vw;
+}
+
+section:nth-child(2) img {
+  width: 100%;
+}
+
+.section2-text {
+  position: relative;
+  left: 10vw;
+  bottom: 42vh;
+  width: 30vw;
+}
+
+.section2-text h4 {
+  background: #fff;
+  color: red;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 80px;
+  padding: 3px;
+}
+
+.section2-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.section2-text p {
+  margin: 2vh 0vh;
+}
+
+#section2-a {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+section:nth-child(3) ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section:nth-child(3) ul li {
+  list-style-type: none;
+  text-align: center;
+  margin: 2vw;
+}
+
+section:nth-child(3) ul li a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+section:nth-child(3) ul li img {
+  display: block;
+  padding: 10px;
+  margin: 0px auto;
+}
+
+section:nth-child(4) .section4-oops {
+  display: flex;
+  margin: 0px 8vw;
+}
+
+section:nth-child(4) .section4-oops > div {
+  margin: 0px 0.5vw;
+}
+
+.section4-space {
+  height: 4.5vh;
+}
+
+.section4-oops div h4 {
+  background-color: #950c17;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  margin-top: 2vh;
+  width: 70px;
+}
+
+.section4-oops div h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.section4-oops div p {
+  margin-top: 2vh;
+  margin-bottom: 2.2vh;
+}
+
+.section4-oops-a {
+  color: #950c17;
+  font-weight: 600;
+}
+
+.section4-oops-a-mr {
+  margin-right: 1vw;
+}
+
+section:nth-child(7) button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+  border: none;
+  right: 0.8vw;
+  bottom: 0.8vw;
+  position: fixed;
+}
+
+/* 圖片設定 */
+#section1_logo {
+  width: 6%;
+  margin: 1rem 2rem 1rem 10rem;
+}
